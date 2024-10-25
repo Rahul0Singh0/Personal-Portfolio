@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/R.jpeg" type="image/jpeg" sizes="32x32" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Rahul Singh</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
                     <div><a href="#academic">Academic</a></div>
                     <div><a href="#certificate">Certificate</a></div>
                     <div><a href="#projects">Projects</a></div>
-                    <div><a href="skills">Skills</a></div>
+                    <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactus">Contact Me</a></div>
                     <div><a href="#" id="myBtn">Call Me</a></div>
                 </div>
@@ -33,12 +34,66 @@
                 </div>
             </div>
             <div class="mobNav">
-                
+                <div><a onclick="hideMobNav()" href="#academic">Academic</a></div>
+                <div><a onclick="hideMobNav()" href="#certificate">Certificate</a></div>
+                <div><a onclick="hideMobNav()" href="#projects">Projects</a></div>
+                <div><a onclick="hideMobNav()" href="#skills">Skills</a></div>
+                <div><a onclick="hideMobNav()" href="#contactus">Contact Me</a></div>
+                <div><a onclick="hideMobNav()" id="myBtn" href="tel:+919936922466">Call Me</a></div>
+                <a onclick="{hideMobNav()}" href="#home" class="profile"></a>
             </div>
         </div>
-        <div class="container">
-
+        <div class="container" id="home">
+            <div class="hero-section">
+                <div class="faded-text">Rahul Singh</div>
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Welcome !! 🖐</div>
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am <span class="role"></span>
+                    </div>
+                    <div class="hero-section-description">
+                        Recently graduate with a Master of Computer Application degree
+                        from the 2024 batch. Currently, I am exploring the world of React
+                        Native as an intern at Kiran Foundation, where I am actively
+                        contributing to real-world project and gaining valuable industry
+                        experience.
+                    </div>
+                    <div class="resume">
+                        <a class="btn-pink" id="btn" 
+                        href="mailto:singhrahul12024@gmail.com">
+                            Hire me
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Hbhwt-nu_ffCMeaEGZInFpInB1gPsSAW/view?usp=sharing"
+                        id="btn" class="btn-pink cv">
+                           Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="./Images/dots.png" style="width: 55px" alt="">
+                    </div>
+                    <div class="absolute icons icon-cube">
+                        <img src="./Images/cube.png" style="width: 26px" alt="">
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <img src="./Images/circle.png" style="width: 23px" alt="">
+                    </div>
+                    <div class="absolute icons icon-zigzag">
+                        <img src="./Images/zigzags.png" style="width: 25px" alt="">
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="./Images/plus.png" style="width: 25px" alt="">
+                    </div>
+                    <div class="user-image">
+                        <img src="./Images/Rahul Profile.jpg" alt=""
+                        style="width: 180px;"
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

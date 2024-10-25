@@ -1,0 +1,101 @@
+/* Extra small devices(phones) */
+@media only screen and (max-width: 575px) {
+  /* your styles for extra small devices go here */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  /* .container {
+        border: 2px solid red;
+    } */
+  .nav-items {
+    display: none;
+  }
+  .mobNav {
+    display: none;
+    animation: slideDown 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 2rem;
+    height: 100vh;
+    width: 100vw;
+    position: fixed; /*Stay in place*/
+    z-index: 1; /*Sit on top*/
+    left: 0;
+    top: 0;
+    overflow: auto; /*Enable scroll if needed*/
+    background-color: #292b46;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  .mobNav div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  .profile {
+    margin-top: 2rem;
+    display: block;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-image: url("./images/Rahul\ Profile.jpg");
+    background-size: 100% 100%;
+  }
+  .menu {
+    display: block;
+    padding: 0 1.5rem;
+  }
+  .ri-menu-line {
+    font-size: 2rem;
+  }
+  .faded-text {
+    display: none;
+  }
+    /* .hero-section-right {
+     display: none; 
+  } */
+  .hero-section-left {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+  }
+  .hero-section-heading {
+    font-size: 25px;
+    color: #343d68;
+    font-weight: 500;
+    text-align: center;
+  }
+  .hero-section-sub-heading {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
+  .hero-section {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .hero-section-description {
+    margin-top: 0rem;
+    width: 90vw;
+    /* padding: 0.5rem; */
+    font-size: medium;
+  }
+  .resume {
+    justify-content: center;
+  }
+}
