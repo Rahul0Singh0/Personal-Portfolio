@@ -1,179 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/R.jpeg" type="image/jpeg" sizes="32x32" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./responsive.css" type="text/css" />
+    <link rel="icon" href="./images/R.jpeg" type="image/png" sizes="32x32" />
+
     <title>Rahul Singh</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="nav-container">
-            <div class="navbar">
-                <div class="logo-container">
-                    <a href="#home">
-                        <img class="logo" src="./Images/R.jpeg" alt="logo">
-                    </a>
-                    <div class="logo-text">ahul Singh</div>
-                </div>
-                <div class="nav-items">
-                    <div><a href="#academic">Academic</a></div>
-                    <div><a href="#certificate">Certificate</a></div>
-                    <div><a href="#projects">Projects</a></div>
-                    <div><a href="#skills">Skills</a></div>
-                    <div><a href="#contactus">Contact Me</a></div>
-                    <div><a href="#" id="myBtn">Call Me</a></div>
-                </div>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3>Dial: +91 9936922466</h3>
-                    </div>
-                </div>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="nav-container">
+        <div class="navbar">
+          <div class="logo-container">
+            <a href="#home"
+              ><img class="logo" src="./images/R.jpeg" alt="logo"
+            /></a>
+            <div class="logo-text">ahul Singh</div>
+          </div>
+
+          <div class="nav-items">
+            <div>
+              <a href="#academic">Academic</a>
             </div>
-            <div class="mobNav">
-                <div><a onclick="hideMobNav()" href="#academic">Academic</a></div>
-                <div><a onclick="hideMobNav()" href="#certificate">Certificate</a></div>
-                <div><a onclick="hideMobNav()" href="#projects">Projects</a></div>
-                <div><a onclick="hideMobNav()" href="#skills">Skills</a></div>
-                <div><a onclick="hideMobNav()" href="#contactus">Contact Me</a></div>
-                <div><a onclick="hideMobNav()" id="myBtn" href="tel:+919936922466">Call Me</a></div>
-                <a onclick="{hideMobNav()}" href="#home" class="profile"></a>
+            <div><a href="#certificate">Certificate</a></div>
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+
+            <div><a href="#contactus">Contact Me</a></div>
+
+            <div>
+              <a id="myBtn" href="#">Call Me</a>
             </div>
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3>Dial: +91 9936922466</h3>
+            </div>
+          </div>
+          <div class="menu" onclick="menu()"><i class="ri-menu-line"></i></div>
         </div>
-        <div class="container" id="home">
-            <div class="hero-section">
-                <div class="faded-text">Rahul Singh</div>
-                <div class="hero-section-left">
-                    <div class="hero-section-heading">Welcome !! 🖐</div>
-                    <div class="hero-section-heading hero-section-sub-heading">
-                        I am <span class="role"></span>
-                    </div>
-                    <div class="hero-section-description">
-                        Recently graduate with a Master of Computer Application degree
-                        from the 2024 batch. Currently, I am exploring the world of React
-                        Native as an intern at Kiran Foundation, where I am actively
-                        contributing to real-world project and gaining valuable industry
-                        experience.
-                    </div>
-                    <div class="resume">
-                        <a class="btn-pink" id="btn" 
-                        href="mailto:singhrahul12024@gmail.com">
-                            Hire me
-                        </a>
-                        <a href="https://drive.google.com/file/d/1Hbhwt-nu_ffCMeaEGZInFpInB1gPsSAW/view?usp=sharing"
-                        id="btn" class="btn-pink cv">
-                           Resume
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-section-right">
-                    <div class="absolute icons icon-dots">
-                        <img src="./Images/dots.png" style="width: 55px" alt="">
-                    </div>
-                    <div class="absolute icons icon-cube">
-                        <img src="./Images/cube.png" style="width: 26px" alt="">
-                    </div>
-                    <div class="absolute icons icon-circle">
-                        <img src="./Images/circle.png" style="width: 23px" alt="">
-                    </div>
-                    <div class="absolute icons icon-zigzag">
-                        <img src="./Images/zigzags.png" style="width: 25px" alt="">
-                    </div>
-                    <div class="absolute icons icon-plus">
-                        <img src="./Images/plus.png" style="width: 25px" alt="">
-                    </div>
-                    <div class="user-image">
-                        <img src="./Images/Rahul Profile.jpg" alt=""
-                        style="width: 180px;"
-                        >
-                    </div>
-                </div>
-            </div>
+        <div class="mobNav">
+          <div>
+            <a onclick="hideMobNav()" href="#academic">Academic</a>
+          </div>
+          <div>
+            <a onclick="hideMobNav()" href="#certificate">Certificate</a>
+          </div>
+          <div><a onclick="hideMobNav()" href="#projects">Projects</a></div>
+          <div><a onclick="hideMobNav()" href="#skills">Skills</a></div>
+
+          <div><a onclick="hideMobNav()" href="#contactus">Contact Me</a></div>
+
+          <div>
+            <a onclick="hideMobNav()" id="myBtn" href="tel:+919936922466"
+              >Call Me</a
+            >
+          </div>
+          <a onclick="hideMobNav()" href="#home" class="profile"></a>
         </div>
-        <div id="academic">
-            <div class="academic-fadded-text">Academic</div>
-            <div class="timelineBox">
-                <div class="timelineItem rightTimeline">
-                    <div>
-                        <h2>MCA: Master Of Computer Application</h2>
-                        <h3>Chandigarh University, Mohali, Punjab</h3>
-                        <p>Session: 2021-2023</p>
-                        <p>Score: 7.8 CGPA</p>
-                    </div>
-                </div>
-                <div class="timelineItem leftTimeline">
-                    <div>
-                        <h2>BCA: Bachelors of Computer Application</h2>
-                        <h3>ITM college of management, GKP, UP</h3>
-                        <p>Session: 2018-2021</p>
-                        <p>Score: 63%</p>
-                    </div>
-                </div>
-                <div class="timelineItem rightTimeline">
-                    <div>
-                      <h2>Intermediate (CBSE)</h2>
-                      <h3>Zenith convent school, Gorakhpur, UP</h3>
-                      <p>Session: 2016-2017</p>
-                    </div>
-                </div>
-                <div class="timelineItem leftTimeline">
-                    <div>
-                      <h2>Matriculation (CBSE)</h2>
-                      <h3>Zenith convent school, Gorakhpur, UP</h3>
-                      <p>Session: 2014-2015</p>
-                    </div>
-                </div>
+      </div>
+      <div class="container" id="home">
+        <div class="hero-section">
+          <div class="faded-text">Rahul Singh</div>
+          <div class="hero-section-left">
+            <div class="hero-section-heading">Welcome !! 🖐</div>
+            <div class="hero-section-heading hero-section-sub-heading">
+              I am <span class="role"></span>
             </div>
+            <div class="hero-section-description">
+              Recently graduate with a MCA degree from Noida Institute of Engineering and Technology, Greater Noida 2024 batch. 
+              Currently, I am exploring the world of Backend with Tech Stacks Node.js, Express.js & Mongodb,
+              where I am actively contributing my knowledge and problem solving skills to projects and gaining valuable experience.
+            </div>
+            <div class="resume">
+              <a
+                class="btn-pink"
+                id="btn"
+                href="mailto:singhrahul12024@gmail.com"
+                >Hire me</a
+              >
+              <a
+                class="btn-pink cv"
+                id="btn"
+                href="https://shorturl.at/kByOf"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+          <div class="hero-section-right">
+            <div class="absolute icons icon-dots">
+              <img style="width: 55px" src="./images/dots.png" alt="" />
+            </div>
+            <div class="absolute icons icon-cube">
+              <img style="width: 26px" src="./images/cube.png" alt="" />
+            </div>
+            <div class="absolute icons icon-circle">
+              <img style="width: 23px" src="./images/circle.png" alt="" />
+            </div>
+            <div class="absolute icons icon-zigzag">
+              <img style="width: 25px" src="./images/zigzags.png" alt="" />
+            </div>
+            <div class="absolute icons icon-plus">
+              <img style="width: 25px" src="./images/plus.png" alt="" />
+            </div>
+            <div class="user-image">
+              <img
+                style="width: 180px"
+                src="./images/Rahul Profile.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        <div class="certificate">
-            <h2 class="page-header">Certificate</h2>
-            <div class="certificate-container">
-                <div class="certificate-section">
-                    <!-- Certificate Card 1 -->
-                     <div class="certificate-card">
-                        <img 
-                        src="./Images/Coursera React.jpeg"
-                        alt="Certificate 1" 
-                        class="certificate-image"
-                        >
-                        <div class="certificate-content">
-                            <h4 style="margin-bottom: 10px;">
-                                Developing Front-End Apps with React
-                            </h4>
-                            <a 
-                            href="https://www.coursera.org/account/accomplishments/verify/W468G5JPARFN?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"
-                            id="btn" 
-                            class="btn-pink">View Certificate</a>
-                        </div>
-                     </div>
-                    <!-- Certificate Card 2 -->
-                    <div class="certificate-card">
-                    <img
-                    class="certificate-image"
-                    src="./images/React JS Great Learning..jpg"
-                    alt="Certificate 2"
+      </div>
+      <div id="academic">
+        <div class="academic-fadded-text">Academic</div>
+        <div class="timelineBox">
+          <div class="timelineItem rightTimeline">
+            <div>
+              <h2>MCA: Master Of Computer Application</h2>
+              <h3>Noida Institute Of Engineering & Technology, Greater Noida</h3>
+              <p>Session: 2022-2024</p>
+              <p>Score: 8.51 CGPA</p>
+            </div>
+          </div>
+          <div class="timelineItem leftTimeline">
+            <div>
+              <h2>BCA: Bachelors of Computer Application</h2>
+              <h3>ITM college of management, GKP, UP</h3>
+              <p>Session: 2018-2021</p>
+              <p>Score: 65.6%</p>
+            </div>
+          </div>
+          <!-- <div class="timelineItem rightTimeline">
+            <div>
+              <h2>Intermediate (CBSE)</h2>
+              <h3>Zenith convent school, Gorakhpur, UP</h3>
+              <p>Session: 2016-2017</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div id="certificate">
+        <h2 class="page-header">Certificate</h2>
+        <div class="certificate-container">
+          <div class="certificate-section">
+            <!-- Certificate Card 1 -->
+            <div class="certificate-card">
+              <img
+                class="certificate-image"
+                src="./images/HR_Basic.jpg"
+                alt="Certificate 1"
+              />
+              <div class="certificate-content">
+                <h4 style="margin-bottom: 10px">
+                  Hackerrank - Problem Solving(Basic)
+                </h4>
+
+                <a
+                  class="btn-pink"
+                  id="btn"
+                  href="https://www.hackerrank.com/certificates/0324fcd6ec6d"
+                  target="_blank"
+                  >View Certificate</a
+                >
+              </div>
+            </div>
+
+            <!-- Certificate Card 2 -->
+            <div class="certificate-card">
+              <img
+                class="certificate-image"
+                src="./images/Ineuron.png"
+                alt="Certificate 2"
+              />
+              <div class="certificate-content">
+                <h4 style="margin-bottom: 10px">DSA with C/C++</h4>
+                <!-- Button working properly when Button wrap in div and have display flex property -->
+                <a
+                  class="btn-pink"
+                  id="btn"
+                  href="https://learn.ineuron.ai/certificate/48d25024-fa2f-4b9b-993b-c196a560ccda"
+                  target="_blank"
+                  >View Certificate</a
+                >
+              </div>
+            </div>
+
+            <!-- Add more certificate cards as needed -->
+          </div>
+        </div>
+      </div>
+      <div class="project-section" id="projects">
+        <h2 class="page-header">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-card" id="project1">
+            <div class="blur-overlay"></div>
+            <div class="project-number project-number-right">01</div>
+            <div class="project-content project-content-left">
+              <div
+                class="project-skills-container project-skills-container-icons"
+              >
+                <img src="./images/react.webp" alt="" class="project-skill" />
+                <img src="./images/firebase.svg" alt="" class="project-skill" />
+                <img src="./images/Tailwind.png" alt="" class="project-skill"/>
+                <img src="./images/EMAIL-JS.png" alt="" class="project-skill" />
+                <img
+                  src="./images/React-icons.svg"
+                  alt=""
+                  class="project-skill"
+                />
+              </div>
+
+              <h2 class="project-heading">ShopClick</h2>
+
+              <div class="project-subHeading">
+                An e-commerce web app, having seamless shopping experience with
+                add to cart, easy navigation and payments feature with Razorpay<span
+                  class="dots"
+                  >...</span
+                ><span class="more" style="display: none"
+                  >.Admin panel for efficient management of products and orders.
+                  Login and Signup for user and fresh users.Tech Used for
+                  Frontend: React.js, Tailwind CSS. Backend: Firebase.
+                </span>
+              </div>
+
+              <div class="btn-grp">
+                <button class="btn-pink btn-project readMore"onclick="readMore(0)">
+                  Read More
+                </button>
+                <a href="https://github.com/Rahul0Singh0/ShopClick" target="_blank">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <!-- <a href="" target="_blank">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="project-card" id="project2">
+            <div class="blur-overlay"></div>
+            <div class="project-number project-number-left">02</div>
+            <div class="project-content project-content-left">
+              <div
+                class="project-skills-container project-skills-container-icons"
+              >
+                <img src="./images/react.webp" alt="" class="project-skill" />
+
+                <img src="./images/nodejs.svg" alt="" class="project-skill" />
+                <img src="./images/mui.png" alt="" class="project-skill" />
+              </div>
+
+              <h2 class="project-heading">Monsoonmate</h2>
+
+              <div class="project-subHeading">
+                Developed a dynamic weather app featuring real-time weather data
+                using weather API.Providing <span class="dots">...</span
+                ><span class="more" style="display: none">
+                  users with accurate weather information for selected
+                  locations. Tech used for Frontend: React.js, Material-UI. API
+                  Integration: OpenWeatherMap.
+                </span>
+              </div>
+
+              <div class="btn-grp">
+                <button
+                  class="btn-pink btn-project readMore"
+                  onclick="readMore(1)"
+                >
+                  Read More
+                </button>
+                <a
+                  href="https://github.com/nitesh-1810/monsoonmate"
+                  target="_blank"
+                >
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="https://monsoonmate.netlify.app/" target="_blank">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="project-card" id="project3">
+            <div class="blur-overlay"></div>
+            <div class="project-number project-number-right">03</div>
+            <div class="project-content project-content-left">
+              <div
+                class="project-skills-container project-skills-container-icons"
+              >
+                <img src="./images/react.webp" alt="" class="project-skill" />
+
+                <img src="./images/nodejs.svg" alt="" class="project-skill" />
+                <img src="./images/css.png" alt="" class="project-skill" />
+                <img
+                  src="./images/localStorage.png"
+                  alt=""
+                  class="project-skill"
+                />
+              </div>
+
+              <h2 class="project-heading">TaskTracker</h2>
+
+              <div class="project-subHeading">
+                Feature of task creation, editing, and deletion capabilities.
+                Tasks saved in localStorage, ensuring persistence across
+                sessions<span class="dots">...</span
+                ><span class="more" style="display: none"
+                  >.Added motivational messages upon task completion for user
+                  engagement. Utilized React Hooks for state management. Tech
+                  used for Frontend: React.js, CSS. Local Storage: Web Storage
+                  API.
+                </span>
+              </div>
+
+              <div class="btn-grp">
+                <button
+                  class="btn-pink btn-project readMore"
+                  onclick="readMore(2)"
+                >
+                  Read More
+                </button>
+                <a
+                  href="https://github.com/nitesh-1810/Task-Tracker"
+                  target="_blank"
+                >
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="https://tasktracker-todo.netlify.app/" target="_blank">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="project-card" id="project2">
+            <div class="blur-overlay"></div>
+            <div class="project-number project-number-left">02</div>
+            <div class="project-content project-content-left">
+              <div
+                class="project-skills-container project-skills-container-icons"
+              >
+                <img src="./images/HTML.png" alt="" class="project-skill" />
+                <img src="./images/css.png" alt="" class="project-skill" />
+                <img src="./images/JS.png" alt="" class="project-skill" />
+              </div>
+
+              <h2 class="project-heading">Portfolio</h2>
+
+              <div class="project-subHeading">
+                This is my portfolio website. It contains my academic details,
+                certificates, and projects. You can get in touch with
+                <span class="dots">...</span
+                ><span class="more" style="display: none"
+                  >me through the contact form, and you can download my resume
+                  and hire me with just one click.
+                </span>
+              </div>
+
+              <div class="btn-grp">
+                <button
+                  class="btn-pink btn-project readMore"
+                  onclick="readMore(3)"
+                >
+                  Read More
+                </button>
+                <a href="https://github.com/Rahul0Singh0/Personal-Portfolio" target="_blank">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <!-- <a href="https://nitesh1810.netlify.app/" target="_blank">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="skills-container">
+        <div class="skill-fade-text">Skills</div>
+        <div class="skill-container-left">
+          <h2 class="skill-heading">
+            <span class="caps">M</span>e and <br />My Tech Stack
+          </h2>
+
+          <section class="main-content">
+            <!-- <p class="experience">
+              With <span class="highlight">6 months</span> of experience,
+            </p> -->
+            <!-- <p class="experience">
+              I am currently contributing to the
+              <span class="highlight experience">Kiran Foundation</span>
+              and exploring the world as a
+              <span class="highlight experience">Intern Front-End Developer</span>.
+            </p> -->
+            <p class="current-tech">My current tech stack includes:</p>
+            <ul class="tech-stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+            </ul>
+            <p class="familiar-tech">I'm also familiar with:</p>
+            <ul class="familiar-stack">
+              <li>Tailwind CSS</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Data Modeling</li>
+            </ul>
+            <p class="familiar-tech">Programming Languages:</p>
+            <ul class="familiar-stack">
+              <li>C/C++</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>SQL</li>
+            </ul>
+            <p class="familiar-tech">Technical Elective:</p>
+            <ul class="familiar-stack">
+              <li>OOPs</li>
+              <li>DSA</li>
+              <li>DBMS</li>
+            </ul>
+            <p class="familiar-tech">Databases:</p>
+            <ul class="familiar-stack">
+              <li>MySql</li>
+              <li>Mongdb</li>
+            </ul>
+          </section>
+        </div>
+        <div class="skill-container-right">
+          <img src="./images/blob vector.png" class="blob-style" alt="" />
+          <img src="./images/C.png" alt="" class="skills-logo" />
+          <img src="./images/C++_Logo.svg" alt="" class="skills-logo" />
+          <img src="./images/HTML.png" alt="" class="skills-logo" />
+          <img src="./images/CSS3.png" alt="" class="skills-logo" />
+          <img src="./images/JS.png" alt="" class="skills-logo" />
+          <img src="./images/react.webp" alt="" class="skills-logo" />
+          <img src="./images/Git.png" alt="" class="skills-logo" />
+          <img src="./images/GitHub.png" alt="" class="skills-logo" />
+          <img src="./images/VScode.png" alt="" class="skills-logo" />
+
+          <img src="./images/firebase.svg" alt="" class="skills-logo" />
+          <img src="./images/Tailwind.png" alt="" class="skills-logo" />
+          <img src="./images/nodejs.svg" alt="" class="skills-logo" />
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div class="contactus-form-container" id="contactus">
+          <div class="contact-container">
+            <div style="padding-left: 20px">
+              <h1 class="contactus-heading">Contact Me</h1>
+              <h3 class="contactus-sub-heading">
+                Question, thoughts, or just want to say hello?
+              </h3>
+            </div>
+            <div class="contactus-form">
+              <form onsubmit="event.preventDefault(); sendMail();">
+                <div class="formfield-container">
+                  <div id="user_name">
+                    <input
+                      class="formfield"
+                      type="'text"
+                      name="name"
+                      id="name"
+                      placeholder="Enter your name"
                     />
-                    <div class="certificate-content">
-                    <h4 style="margin-bottom: 10px">React JS</h4>
-                    <!-- Button working properly when Button wrap in div and have display flex property -->
-                    <a
-                        class="btn-pink"
-                        id="btn"
-                        href="https://drive.google.com/file/d/1taKU5hGRAofLRVDSY8ljGUwGsVXPOJZi/view?usp=sharing"
-                        target="_blank"
-                        >View Certificate</a
-                    >
-                    </div>
-                    </div>
-  
-                    <!-- Add more certificate cards as needed -->
+                  </div>
+                  <div id="user_email">
+                    <input
+                      class="formfield"
+                      type="'email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div id="user_subject">
+                    <input
+                      class="formfield"
+                      type="'text"
+                      name="subject"
+                      id="subject"
+                      placeholder="Enter your subject"
+                    />
+                  </div>
+                  <div id="user_message">
+                    <textarea
+                      class="formfield formfield-textarea"
+                      cols="30"
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </div>
                 </div>
+                <div>
+                  <button type="submit" class="btn-pink" id="submit-btn">
+                    Send Message<i
+                      class="submit-icon fa-solid fa-paper-plane"
+                    ></i>
+                  </button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
+        <div class="contactus-image">
+          <img class="contactImg" src="./images/contact Us.webp" alt="img" />
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-wrapper">
+            <div class="footer-faded-text">Nitesh Singh</div>
+            <div class="link-wrapper">
+              <div>
+                <a href="#projects">Project</a>
+              </div>
+              <div>
+                <a href="#skills">Skills</a>
+              </div>
+              <div>
+                <a href="#contactus">Contact Me</a>
+              </div>
+              <div>
+                <a href="#home"><i class="fa-solid fa-circle-up fa-xl"></i></a>
+              </div>
+            </div>
+            <div class="icon-wrapper">
+              <a
+                href="https://www.linkedin.com/in/rahul0singh0/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin icon"></i
+              ></a>
+              <a href="https://github.com/rahul0singh0" target="_blank"
+                ><i class="fa-brands fa-github icon"></i
+              ></a>
+              <!-- <i class="fa-brands fa-twitter icon"></i>
+              <i class="fa-brands fa-instagram icon"></i> -->
+              <a href="mailto:singhrahul12024@gmail.com"
+                ><i class="fa-regular fa-envelope icon"></i
+              ></a>
+              <a href="tel:+919936922466"
+                ><i class="fa-solid fa-phone icon" style="font-size: 1.8em"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("yC8aolbmWJd-X8dUh");
+      })();
+    </script>
+  </body>
 </html>
