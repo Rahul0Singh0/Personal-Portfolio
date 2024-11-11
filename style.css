@@ -1035,3 +1035,12 @@ footer {
   border-radius: 5px;
   font-weight: bold;
 }
+
+.familiar-stack li a {
+  color: black;
+}
+
+.familiar-stack li a:hover {
+  color: #e74c3c;
+  ;
+}
